@@ -39,9 +39,9 @@ mod my_module {
                 Command::Append(length) => {
                     let mut res = string.to_owned();
                     for i in 0..*length{
-                        res = res + "bar";
+                         res.push_str("bar");
                     }
-                    output.push(res.to_string());
+                    output.push(res);
                 }
             };
         }
